@@ -1,9 +1,2 @@
 #!/bin/bash
-
-# Création du répertoire "my_dir"
-if mkdir my_dir; then
-    chmod 751 my_dir
-    echo "Le répertoire 'my_dir' a été créé avec succès et les permissions ont été définies sur 751."
-else
-    echo "Échec de la création du répertoire 'my_dir'."
-fi
+mkdir my_dir && chmod 751 my_dir
